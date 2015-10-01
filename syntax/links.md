@@ -1,55 +1,52 @@
-# Links
+Markdown supporte deux styles de liens: inline et de référence.
 
-Markdown supports two styles of links: inline and reference.
+Dans les deux styles, le texte du lien est délimité par des [crochets].
 
-In both styles, the link text is delimited by [square brackets].
+Pour créer un lien en ligne, utiliser un ensemble de parenthèses réguliers immédiatement après le lien TEXTA crochet fermant € ™ s. A l'intérieur des parenthèses, mettre l'URL où vous voulez que le lien vers le point, avec un titre optionnel pour le lien, entourée de guillemets. Par example:
+`` `démarque
+[Je suis un lien inline-style] (https://www.google.com)
 
-To create an inline link, use a set of regular parentheses immediately after the link text’s closing square bracket. Inside the parentheses, put the URL where you want the link to point, along with an optional title for the link, surrounded in quotes. For example:
-```markdown
-[I'm an inline-style link](https://www.google.com)
+[Je suis un lien inline-style avec le titre] (https://www.google.com "page d'accueil de Google»)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[Je suis un lien référence de style] [arbitraire texte de référence insensible à la casse]
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+[Je suis une référence par rapport à un fichier référentiel] (../ blob / master / LICENCE)
+`` `
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-```
+Les liens par référence utilisent une deuxième série de crochets, à l'intérieur duquel vous placez une étiquette de votre choix pour identifier le lien:
+`` `démarque
+Ceci est [un exemple] lien [id] référence de style.
+`` `
 
-Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:
-```markdown
-This is [an example][id] reference-style link.
-```
+Vous pouvez éventuellement utiliser un espace pour séparer les jeux de supports:
+`` `démarque
+Ceci est [un exemple] lien [id] référence de style.
+`` `
 
-You can optionally use a space to separate the sets of brackets:
-```markdown
-This is [an example] [id] reference-style link.
-```
+Ensuite, n'importe où dans le document, vous définissez votre étiquette de lien comme ça, sur une ligne par lui-même:
+`` `démarque
+[id]: http://example.com/ "Titre optionnel Voici"
+`` `
 
-Then, anywhere in the document, you define your link label like this, on a line by itself:
-```markdown
-[id]: http://example.com/  "Optional Title Here"
-```
-
-**GitHub** and **GitBook** supports URL autolinking. They will autolink standard URLs, so if you want to link to a URL (instead of setting link text), you can simply enter the URL and it will be turned into a link to that URL.
+** GitHub ** et ** ** GitBook soutient URL autolinking. Ils seront AutoLink URL standard, donc si vous voulez faire un lien vers une URL (au lieu de mettre le texte du lien), vous pouvez simplement entrer l'URL et il sera transformé en un lien vers cette URL.
 
 
 ---
 
-Here's a quiz about markdown links.
+Voici un quiz sur les liens de démarques.
 
-Select the valid links:
-- [x] `[a link](http://google.fr)`
-- [ ] `(a link)[http://google.fr]`
+Sélectionnez les liens valides:
+- [X] `[un lien] (http://google.fr)`
+- [] `(Un lien) [http://google.fr]`
 
-> The link text is delimited by [square brackets].
+> Le texte du lien est délimité par des [crochets].
 
-What are the correct informations from this link: ```[a link](http://google.fr "google")```
-- [ ] the link is https://google.fr
-- [x] the title of the link is "google"
-- [ ] it'll show the text "google"
-- [x] it'll show the text "a link"
+Quelles sont les informations correctes à partir de ce lien: `` `[un lien] (http://google.fr« Google »)` ``
+- [] Le lien est https://google.fr
+- [X] le titre du lien est "google"
+- [] Il va montrer le texte "google"
+- [X] il va montrer le texte "un lien"
 
-> Links can have 3 parts: the text, the url and a title.
+> Liens peuvent avoir 3 parties: le texte, l'URL et un titre.
 
 ---
-
